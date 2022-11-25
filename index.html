@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-finder</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="container">
+        <div class="search">
+            <h1>SEARCH YOU FAVOURITE MOVIES</h1>
+            <form>
+                <input type="text" id="inp" placeholder="Search Movies">
+                <button>Search</button>
+            </form>
+        </div>
+        <div class="bgchange">
+            <button type="button" class="aqua" onclick="myFunction1()"></button>
+            <button type="button" class="pink" onclick="myFunction2()"></button>
+            <button type="button" class="blue" onclick="myFunction3()"></button>
+            <button type="button" class="green" onclick="myFunction4()"></button>
+            <button type="button" class="grey" onclick="myFunction5()"></button>
+        </div>
+
+        <div id="list"></div>
+    </section>
+    
+    <script>
+        function myFunction1() {
+          document.body.style.backgroundColor = "aqua";
+        }
+        function myFunction2() {
+          document.body.style.backgroundColor = "pink";
+        }
+        function myFunction3() {
+          document.body.style.backgroundColor = "lightblue";
+        }
+        function myFunction4() {
+          document.body.style.backgroundColor = "lightgreen";
+        }
+        function myFunction5() {
+          document.body.style.backgroundColor = "grey";
+        }
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>
